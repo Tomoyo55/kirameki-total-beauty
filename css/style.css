@@ -1,0 +1,1572 @@
+@charset "UTF-8"; /* 文字コードの指定 */
+
+/* Webフォントの指定 */
+
+
+/*font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+
+/* ページ全体 */
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: normal;
+  line-height: 1.75;
+  color: #000000;
+  line-break: strict;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+
+
+
+
+/* ヘッダー */
+
+.header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;/* 大きいほど上に被さる */
+  display: flex;
+  top: 0;
+}
+
+.whitehead {
+  width: 100%;
+  background-color: #ffffff;
+  opacity: 70%;
+  height: 5.86vw ;
+}
+
+.title-logo {
+  position: fixed;
+  z-index: 101;
+  width: 15.23vw;
+  height: auto;
+  margin-top: 1.61vw;
+  margin-left: 7.91vw;
+}
+
+.hamburger-button {
+  /*z-index: 101;/* 大きいほど上に被さる */
+  display: none;
+}
+
+.menu {
+  position: absolute;
+  /*z-index: 101; 大きいほど上に被さる */
+  top: 1.72vw;
+  right: 21.96vw;
+}
+
+.hamburger-menu ul {
+  display: flex;
+  margin-right: 0.51vw;
+  column-gap: 0.44vw;
+}
+
+.hamburger-menu li {
+  width: 7.17vw;
+  height: 2.34vw;
+  line-height: 2vw;
+  font-size: 1.17vw;
+  border: solid #606060 0.15vw;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.muryo-button{
+  position: absolute;
+  position: fixed;
+  z-index: 101; /*大きいほど上に被さる */
+  top: 1.7vw;
+  right: 8vw;
+}
+
+.muryo-button a {
+  position: relative;
+  width: 14.06vw;
+  height: 2.64vw;
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.17vw;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #0097a7;
+  border-radius: 1.1vw;
+  letter-spacing: 0.001em;
+  padding: 0.29vw 1.1vw;
+}
+
+.bi-chevron-right {
+  position: absolute;
+  left: 12.2vw;
+}
+
+
+
+
+
+/* 始めのセクションほぼ写真 */
+.carousel {
+  width: 100vw;
+}
+
+.catchphrase {
+  position: absolute;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 2.64vw;
+  font-weight: normal;
+  top: 42.2vw;
+  left: 8vw;
+  line-height: 4.6vw;
+}
+
+.top-next-div {
+  display: none;
+  height: 0;
+}
+
+
+
+
+
+
+
+
+/* セクション魅力 */
+
+.miryoku-section {
+  height: auto;
+  background-color: #ffffff;
+  width: 100vw;
+}
+
+.miryoku {
+  margin-top: 4.4vw;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 3.7vw;
+  width: 83.89vw;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.miryokunakami {
+  display: flex;
+  flex-direction: column;
+  width: 19.33vw;
+  height: 100%;
+}
+
+.maru {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1.9vw;
+  width: 11.71vw;
+  height: 11.71vw;
+  border: solid #0097a7 0.22vw;
+  border-radius: 50%;
+  color: #0097a7;
+  display: flex;
+  flex-direction: column;
+}
+
+.miryokutitle {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.76vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.miryokunumber {
+  font-family: 'Noto Sans JP', serif;
+  font-size: 3.51vw;
+  margin-top: -1vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.miryokusyokai {
+  text-align: center;
+  font-size: 1.76vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.6vw;
+}
+
+
+
+
+
+/* リピートボタン */
+
+.repeat {
+  height: 31.99vw;
+  width: 100vw;
+  background-color: #b5e9ee;
+  padding-top: 2.7vw;
+}
+
+.biyoutokka h2 {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 530;
+  font-size: 3.51vw;
+  color: #0097a7;
+  text-align: center;
+  margin-bottom: 2.6vw;
+}
+
+.biyoutokka br {
+  display: none;
+}
+
+.note {
+  font-size: 1.76vw;
+  margin-left: 34.5vw;
+  margin-bottom: 3.6vw;
+}
+
+.bi-square {
+  font-size: 1.5vw;
+  margin-right: 1.6vw;
+  filter: drop-shadow(0.15vw 0.15vw #a9a9a9);
+}
+
+.note1, .note2 {
+  display: flex;
+}
+
+.note1 {
+  margin-bottom: 0.7vw;
+}
+
+.repeat-muryo-button a {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40.85vw;
+  height: 5.71vw;
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2.34vw;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #0097a7;
+  border-radius: 1.1vw;
+  letter-spacing: 0.001em;
+  padding: 0.9vw 8.7vw;
+  filter: drop-shadow(0.5vw 0.7vw #a9a9a9);
+}
+
+.repeat-muryo-button .bi-chevron-right {
+  position: absolute;
+  left: 30.5vw;
+}
+
+
+
+
+
+
+
+/* セクション特徴 */
+
+.tokutyo4tu h2 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 3.51vw;
+  color: #0097a7;
+  text-align: center;
+  margin-top: 0.9vw;
+  margin-bottom: 1vw;
+}
+
+.pcnone {
+  display: none;
+}
+
+.tokutyo {
+  color: #606060;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+.tokutyo strong {
+  line-height: 3.51vw;
+  background-color: #b5e9ee;
+  background: linear-gradient(
+    to bottom, /* 方向 */
+    transparent 10% 10%,  /* 上半分の領域 */
+    #b5e9ee 20% 1% /* 下半分の領域 */
+  );
+}
+
+.tokutyo h3 {
+  font-size: 3.51vw;
+}
+
+.tokutyo span {
+  font-size: 2.64vw;
+  margin-top: -0.4vw;
+}
+
+.kaunseringu table {
+  width: 71vw;
+  height: 19.91vw;
+  margin-left: 14.5vw;
+  margin-right: auto;
+  margin-top: 1.3vw;
+  font-weight: light;
+  border-spacing: 0.73vw;
+}
+
+.kaunseringu .tabletitle {
+  background-color: #0097a7;
+  color: #ffffff;
+  font-size: 2.34vw;
+  border-radius: 1.1vw 1.1vw 0 0;
+  height: 4.1vw;
+}
+
+.kaunseringu th {
+  width: 20vw;
+  height: 5.27vw;
+  background-color: #dddddd;
+  color: #000000;
+  font-size: 1.76vw;
+  text-align: center;
+}
+
+.kaunseringu td {
+  width: 48.76vw;
+  background-color: #eeeeee;
+  color: #000000;
+  padding-left: 2.3vw;
+  font-size: 1.17vw;
+}
+
+.tablebottomleft {
+  border-radius: 0 0 0 1.1vw;
+}
+
+.tablebottomright {
+  border-radius: 0 0 1.1vw 0;
+}
+
+
+
+
+
+/* セクション特徴の特徴２ */
+
+.cost {
+  margin-top: -0.3vw;
+}
+
+.cost p {
+  margin-right: 0.3vw;
+  letter-spacing: -0.025em;
+}
+
+.start-cost, .monthly-cost {
+  width: 31.48vw;
+  margin-left: 6.59vw;
+  margin-top: 2.3vw;
+}
+
+.start-cost {
+  margin-left: 15.3vw;
+}
+
+.start-cost-title, .monthly-cost-title {
+  width: 31.48vw;
+  height: 4.39vw;
+  background-color: #0097a7;
+  color: #ffffff;
+  font-size: 2.64vw;
+  text-align: center;
+  padding-bottom: 4vw;
+}
+
+.nyukaigetugaku {
+  display: flex;
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.start-cost-cost, .monthly-cost-cost {
+  color: #0097a7;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 5.86vw;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1.6vw;
+}
+
+.start-cost-cost span, .monthly-cost-cost span {
+  font-size: 1.76vw;
+  font-weight: lighter;
+  padding-right: 0.5vw;
+}
+
+.monthly-cost-cost {
+  margin-left: 0.4vw;
+}
+
+.betto {
+  text-align: center;
+  margin-top: -0.4vw;
+}
+
+
+
+/* セクション特徴の特徴３ */
+
+.roomshokai {
+  display: flex;
+  width: 69.55vw;
+  margin-top: 1.8vw;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
+.koshitu, .aroma {
+  width: 33.75vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.17vw;
+}
+
+.koshitu-shokai, .aroma-shokai {
+  width: 33.75vw;
+  padding: 1vw 2vw;
+  word-wrap: break-word;
+}
+
+.animate__animated {
+  /* 最初から非表示 */
+  opacity: 0;
+}
+
+
+
+/* セクション特徴の特徴４ */
+.access {
+  margin-top: -1.2vw;
+}
+
+.googlemap {
+  margin-top: 2.3vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+
+.googlemap iframe {
+  width: 84.04vw;
+  height: 35.43vw;
+}
+
+.annai br {
+  display: none;
+}
+
+.annai, .address {
+  text-align: center;
+}
+
+.annai {
+  font-size: 1.17vw;
+  margin-top: 0.2vw;
+  margin-left: 0.4vw;
+}
+
+.address {
+  font-size: 1.76vw;
+  margin-top: 1vw;
+  margin-left: 2vw;
+}
+
+
+.nitteitable {
+  font-size: 1.76vw;
+  width: 69.55vw;
+  height: 9.37vw;
+  margin-top: 1.5vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 4.3vw;
+}
+
+.nitteitable table  {
+  border-collapse:collapse
+}
+
+.youbi {
+  background-color: #0097a7;
+  color: #ffffff;
+  border: 0 #0097a7;
+  border-spacing:0
+}
+
+.youbi1 {
+  width: 7.17vw;
+}
+
+.nitteitableleft {
+  width: 6.08vw;
+}
+
+.nitteitableright {
+  width: 6.08vw;
+}
+
+.gozengogo {
+  width: 7.17vw;
+}
+
+.gozen td, .gogo td {
+  border-bottom: solid 0.07vw #606060;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 質問セクション */
+
+.questiontitle {
+  color: #0097a7;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 2.5vw;
+  text-align: center;
+  margin-top: 2.4vw;
+}
+
+.qamatome {
+  width: 69.55vw;
+  font-size: 1.32vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3.1vw;
+  margin-bottom: 9vw;
+}
+
+.question {
+  display: flex;
+  vertical-align: middle;
+}
+
+.none {
+  display: none;
+}
+
+.answer-letter {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 0.4vw;
+  margin-bottom: 0.2vw;
+}
+
+.answer-letter p {
+  display: inline-block;
+  padding-top: 0.5vw;
+  padding-left: 0.4vw;
+  width: 58vw;
+}
+
+.question-letter {
+  display: flex;
+  justify-content: space-between;
+  color: #0097a7;
+}
+
+.question p {
+  padding-top: 0.5vw;
+  padding-left: 0.75vw;
+}
+
+.question span, .answer-letter span {
+  display: inline-block;
+  color: #0097a7;
+  font-size: 1.76vw;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.a3 span, .a4 span, .a5 span {
+  padding-bottom: 3vw;
+  vertical-align: top;
+}
+
+.a1, .a2 {
+  height: 3.29vw;
+}
+
+.a3, .a4, .a5{
+  height: 5.49vw;
+}
+
+.qaaida hr {
+  width: 100%;
+  size: 0.15vw;
+  background-color: #0097a7;
+  margin-top: 0.53vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.question-letter  {
+  cursor: pointer;
+  position: relative;
+}
+.answer-letter {
+  display: block;
+}
+/* .ac-labelを親要素としてアイコン位置を絶対値で指定 */
+.icon-wrap {
+  position: absolute;
+  right: -0.07vw;
+  top: 50%;
+  transform: translatey(-50%);
+  width: 2.78vw;
+  height: 2.78vw;
+  background: #0097a7;
+}
+
+/* .icon-wrapの中でプラスを中央に位置させるために.iconを親要素に設定 */
+.icon {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+/* プラスアイコン */
+/* ２本の線を.icon-wrapの中央に並行に重ねる */
+.icon:before,
+.icon:after {
+  position: absolute;
+  content: "";
+  display: block;
+  transition: all 0.4s;
+  background: #fff;
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  height: 0.15vw;
+  transform: translate(-50%, -50%);
+}
+/* そのうち1本を縦にする */
+.icon:before {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+/* プラスアイコンクリック後、マイナスにする */
+.icon.open:before {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+footer {
+  height: 11.2vw;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 32.72vw;
+  height: auto;
+  margin-top: 2.93vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-logo img {
+  width: 32.72vw;
+}
+
+.tyosaku {
+  margin-top: 2.2vw;
+  font-size: 0.88vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* お問い合わせ */
+
+
+/* フッター */
+
+
+
+/* レスポンシブ（SP表示の指定） -------------------------------------------------------------------------------------------------------------*/
+/* レスポンシブ（SP表示の指定） -------------------------------------------------------------------------------------------------------------*/
+/* レスポンシブ（SP表示の指定） -------------------------------------------------------------------------------------------------------------*/
+/* レスポンシブ（SP表示の指定） -------------------------------------------------------------------------------------------------------------*/
+/* レスポンシブ（SP表示の指定） -------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width:767px) {
+
+  /* 全体（SP） */
+  /* ヘッダー */
+  .header {
+    width: 100%;
+    position: relative;
+    z-index: 100;/* 大きいほど上に被さる */
+    display: flex;
+  }
+
+  .whitehead {
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    opacity: 70%;
+    height: 14vw ;
+  }
+
+  .title-logo {
+    width: 68vw;
+    height: auto;
+    margin-top: 3.7vw;
+    margin-left: 3.91vw;
+  }
+
+  .hamburger-button {
+    z-index: 101;/* 大きいほど上に被さる */
+    display: block;
+    position: fixed;
+    margin-top: -2vw;
+    margin-left: 87vw;
+    font-size: 11vw;
+    font-weight: bold;
+  }
+
+  .menu {
+    position: fixed;
+    /*z-index: 101; 大きいほど上に被さる */
+    width: 100%;
+    background-color: #ffffff;
+    opacity: 70%;
+    height: 30.5vw;
+    top: -110%;
+    left: 0vw;
+    visibility: visible;
+    transition: all .9s linear;
+  }
+
+
+  .hamburger-menu {
+    margin-top: 6.5vw;
+    margin-left: 0.9vw;
+  }
+
+  .menu-active {
+    top: 14vw;
+    visibility: visible;
+  }
+
+  .hamburger-menu ul {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0.51vw;
+    margin-left: 3vw;
+    column-gap: 0.44vw;
+    row-gap: 2vw;
+  }
+
+  .hamburger-menu li {
+    width: 100vw;
+    height: 5vw;
+    line-height: 5.34vw;
+    font-size: 4.27vw;
+    border: solid #606060 0vw;
+    text-align: left;
+  }
+
+
+  .muryo-button{
+    position: absolute;
+    /*z-index: 101; 大きいほど上に被さる */
+    top: 151.6vw;
+    right: 22vw;
+  }
+
+  .muryo-button a {
+    position: relative;
+    width: 56vw;
+    height: 12vw;
+    line-height: 12vw;
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    font-size: 4.8vw;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #0097a7;
+    border-radius: 4vw;
+    letter-spacing: 0.001em;
+    padding: 0vw 3.9vw;
+  }
+
+  .bi-chevron-right {
+    position: absolute;
+    left: 0.6vw;
+    width: 100vw;
+  }
+
+.top-section {
+  margin-top: 16vw;
+}
+
+.catchphrase {
+  position: absolute;
+  font-family: 'Noto Serif JP', serif;
+  width: 100vw;
+  text-align: center;
+  font-size: 7.47vw;
+  font-weight: normal;
+  top: 120.2vw;
+  left: 0vw;
+  line-height: 13vw;
+}
+
+
+.top-next-div {
+  display: block;
+}
+
+.top-next {
+  size: 0.27vw;
+  color: #606060;
+  width: 92vw;
+  margin-top: 55.7vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+/* セクション魅力 */
+
+.miryoku-section {
+  height: auto;
+  background-color: #ffffff;
+  width: 100vw;
+}
+
+.miryoku {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
+  height: auto;
+  margin-top: 16vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8.7vw;
+}
+
+.miryokunakami {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 100%;
+}
+
+.maru {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6.9vw;
+  width: 41.6vw;
+  height: 41.6vw;
+  border: solid #0097a7 0.8vw;
+  border-radius: 50%;
+  color: #0097a7;
+  display: flex;
+  flex-direction: column;
+}
+
+.miryokutitle {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 6.4vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.miryokunumber {
+  font-family: 'Noto Sans JP', serif;
+  font-size: 12.8vw;
+  margin-top: -4.2vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.miryokusyokai {
+  text-align: center;
+  font-size: 5.33vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3.6vw;
+  margin-bottom: 5vw;
+}
+
+
+/* リピートボタン */
+.repeat {
+  height: 110.4vw;
+  width: 100vw;
+  background-color: #b5e9ee;
+  padding-top: 14.3vw;
+}
+
+.biyoutokka h2 {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 530;
+  font-size: 9.07vw;
+  color: #0097a7;
+  text-align: center;
+  margin-bottom: 13.2vw;
+  line-height: 1.24;
+}
+
+.biyoutokka br {
+  display: block;
+}
+
+.note {
+  font-size: 4.8vw;
+  margin-left: 10.7vw;
+  margin-bottom: 13.6vw;
+}
+
+.bi-square {
+  font-size: 4.3vw;
+  margin-right: 5.3vw;
+  filter: drop-shadow(0.5vw 0.5vw #a9a9a9);
+}
+
+.note1, .note2 {
+  display: flex;
+}
+
+.note1 {
+  margin-bottom: 1.6vw;
+}
+
+.repeat-muryo-button a {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90.67vw;
+  height: 12.27vw;
+  display: flex;
+  text-decoration: none;
+  text-align: center;
+  font-size: 5.33vw;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #0097a7;
+  border-radius: 4vw;
+  letter-spacing: 0.001em;
+  padding: 1.5vw 17vw;
+  filter: drop-shadow(1.4vw 1.9vw #a9a9a9);
+}
+
+.repeat-muryo-button .bi-chevron-right {
+  position: absolute;
+  left: 20.5vw;
+}
+
+
+
+
+
+
+
+/* セクション特徴 */
+/* セクション特徴の特徴１ */
+.tokutyo4tu h2 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 9.07vw;
+  color: #0097a7;
+  text-align: center;
+  margin-top: 4.4vw;
+  margin-bottom: 6vw;
+}
+
+.pcnone {
+  display: block;
+}
+
+.tokutyo {
+  color: #606060;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+.tokutyo strong {
+  line-height: 3.51vw;
+  background-color: #b5e9ee;
+  background: linear-gradient(
+    to bottom, /* 方向 */
+    transparent 10% 10%,  /* 上半分の領域 */
+    #b5e9ee 20% 1% /* 下半分の領域 */
+  );
+}
+
+.tokutyo h3 {
+  font-size: 12.8vw;
+}
+
+.tokutyo span {
+  font-size: 8.53vw;
+  margin-top: 0.4vw;
+  line-height: 1.3;
+}
+
+.kaunseringu table {
+  width: 97.27vw;
+  height: 106.67vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6.7vw;
+  font-weight: lighter;
+  border-spacing: 2.67vw;
+}
+
+
+.kaunseringu .tabletitle {
+  background-color: #0097a7;
+  color: #ffffff;
+  font-size: 4.8vw;
+  border-radius: 4vw 4vw 0 0;
+  height: 13.6vw;
+  width: 96.27vw;
+  padding-bottom: 2.2vw;
+}
+
+.kaunseringu th {
+  width: 26.67vw;
+  height: 28.27vw;
+  background-color: #dddddd;
+  color: #000000;
+  font-size: 3.2vw;
+  text-align: center;
+}
+
+.kaunseringu td {
+  width: 62.67vw;
+  background-color: #eeeeee;
+  color: #000000;
+  font-size: 3.2vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  padding-bottom: 1vw;
+}
+
+.tablebottomleft {
+  border-radius: 0 0 0 4vw;
+}
+
+.tablebottomright {
+  border-radius: 0 0 4vw 0;
+}
+
+
+
+
+
+/* セクション特徴の特徴２ */
+
+.cost {
+  margin-top: -1.3vw;
+}
+
+.cost p {
+  margin-right: -0.5vw;
+  letter-spacing: 0.0em;
+}
+
+.cost strong {
+  letter-spacing: -0.027em;
+}
+
+.start-cost, .monthly-cost {
+  width: 92.27vw;
+  margin-left: 0vw;
+  margin-top: 11vw;
+}
+
+.start-cost {
+  margin-left: 0vw;
+}
+
+.monthly-cost {
+  margin-top: 13vw;
+}
+
+.start-cost-title, .monthly-cost-title {
+  width: 92.27vw;
+  height: 15.47vw;
+  background-color: #0097a7;
+  color: #ffffff;
+  font-size: 9.6vw;
+  text-align: center;
+  padding-bottom: 0vw;
+  line-height: 15vw;
+}
+
+
+.nyukaigetugaku {
+  display: flex;
+  font-weight: bold;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.start-cost-cost, .monthly-cost-cost {
+  color: #0097a7;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 16vw;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 8vw;
+}
+
+.start-cost-cost span, .monthly-cost-cost span {
+  font-size: 6.4vw;
+  font-weight: lighter;
+  padding-right: 0.5vw;
+  padding-left: 1vw;
+}
+
+.monthly-cost-cost {
+  margin-left: 0.4vw;
+}
+
+.betto {
+  text-align: center;
+  margin-left: 0.8vw;
+  margin-top: 0.9vw;
+  font-size: 3.2vw;
+}
+
+
+
+/* セクション特徴の特徴３ */
+
+.room {
+ margin-right: 2vw;
+ margin-top: 0.5vw;
+}
+
+.roomshokai {
+  display: flex;
+  flex-wrap: wrap;
+  width: 92.53vw;
+  margin-top: 9.6vw;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: 	flex-start;
+}
+
+.koshitu, .aroma {
+  width: 92.53vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 3.2vw;
+}
+
+.koshitu-shokai, .aroma-shokai {
+  width: 92.53vw;
+  padding-top: 3.7vw;
+  padding-left: 5.3vw;
+  padding-right: 4.15vw;
+  word-wrap: break-word;
+  margin-bottom: 5.3vw;
+}
+
+
+
+
+/* セクション特徴の特徴４ */
+.access {
+  margin-top: -6.2vw;
+}
+
+.googlemap {
+  margin-top: 10.3vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+.googlemap iframe {
+  width: 91.87vw;
+  height: 66.93vw;
+}
+
+.access br {
+  display: block;
+}
+
+.annai, .address {
+  text-align: center;
+}
+
+.annai {
+  font-size: 3.2vw;
+  margin-top: 1.4vw;
+  margin-left: 2.7vw;
+}
+
+.address {
+  font-size: 4.8vw;
+  margin-top: 4.6vw;
+  margin-left: 0vw;
+}
+
+
+.nitteitable {
+  font-size: 3.2vw;
+  width: 92vw;
+  height: 17.33vw;
+  margin-top: 6.3vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 16vw;
+}
+
+.nitteitable table  {
+  border-collapse:collapse
+}
+
+.youbi {
+  background-color: #0097a7;
+  color: #ffffff;
+  border: 0 #0097a7;
+  border-spacing:0
+}
+
+.youbi1 {
+  width: 9.6vw;
+}
+
+.nitteitableleft {
+  width: 6.8vw;
+}
+
+.nitteitableright {
+  width: 7.47vw;
+}
+
+.gozengogo {
+  width: 10.4vw;
+}
+
+.gozen td, .gogo td {
+  border-bottom: solid 0.07vw #606060;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 質問セクション */
+
+.questiontitle {
+  color: #0097a7;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 6.4vw;
+  text-align: center;
+  margin-top: 10.4vw;
+}
+
+.qamatome {
+  width: 92vw;
+  font-size: 4.27vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10.1vw;
+}
+
+.question {
+  display: flex;
+  vertical-align: middle;
+  width: 80vw;
+}
+
+.none {
+  display: none;
+}
+
+.answer-letter {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 0.4vw;
+  margin-bottom: 0.2vw;
+}
+
+.answer-letter p {
+  display: inline-block;
+  padding-top: 0.5vw;
+  padding-left: 0.4vw;
+  width: 72vw;
+}
+
+.question-letter {
+  display: flex;
+  justify-content: space-between;
+  color: #0097a7;
+  width: 92vw;
+}
+
+.question p {
+  padding-top: 1.5vw;
+  padding-left: 2.5vw;
+  letter-spacing: 0.0em;
+}
+
+.question span, .answer-letter span {
+  display: inline-block;
+  color: #0097a7;
+  font-size: 6.4vw;
+  font-family: 'Noto Serif JP', serif;
+}
+
+.a1 span, .a2 span {
+  vertical-align: top;
+}
+
+.a3 span, .a4 span, .a5 span {
+  padding-bottom: 3vw;
+  vertical-align: top;
+}
+
+.a1 {
+  height: 16vw;
+}
+
+.a2 {
+  height: 25vw;
+}
+
+.a3, .a4, .a5{
+  height: 33vw;
+}
+
+.qaaida hr {
+  width: 100%;
+  size: 0.8vw;
+  background-color: #0097a7;
+  margin-top: 1.53vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2vw;
+}
+
+.qaaida3 hr, .qaaida4 hr {
+  margin-top: 7.3vw;
+}
+
+
+.question-letter  {
+  cursor: pointer;
+  position: relative;
+}
+.answer-letter {
+  display: block;
+}
+/* .ac-labelを親要素としてアイコン位置を絶対値で指定 */
+.icon-wrap {
+  position: absolute;
+  right: -0.07vw;
+  top: 50%;
+  transform: translatey(-50%);
+  width: 9.6vw;
+  height: 9.6vw;
+  background: #0097a7;
+}
+
+.q3 .icon-wrap, .q3 .icon-wrap, .q4 .icon-wrap {
+  margin-top: 3vw;
+}
+
+/* .icon-wrapの中でプラスを中央に位置させるために.iconを親要素に設定 */
+.icon {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+/* プラスアイコン */
+/* ２本の線を.icon-wrapの中央に並行に重ねる */
+.icon:before,
+.icon:after {
+  position: absolute;
+  content: "";
+  display: block;
+  transition: all 0.4s;
+  background: #fff;
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  height: 2px;
+  transform: translate(-50%, -50%);
+}
+/* そのうち1本を縦にする */
+.icon:before {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+/* プラスアイコンクリック後、マイナスにする */
+.icon.open:before {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+footer {
+  height: 36vw;
+  text-align: center;
+}
+
+.footer-logo {
+  width: 91.2vw;
+  height: auto;
+  margin-top: 10vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-logo img {
+  width: 91.2vw;
+}
+
+.tyosaku {
+  margin-top: 7.2vw;
+  font-size: 2.93vw;
+}
+
+
+
+}
